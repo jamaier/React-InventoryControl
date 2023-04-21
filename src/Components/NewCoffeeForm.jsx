@@ -1,10 +1,9 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
-import { v4 } from 'uuid';
+import { v4 } from "uuid";
 
 function NewCoffeeForm(props) {
-
   function handleNewCoffeeFormSubmission(event) {
     event.preventDefault();
     props.onNewCoffeeCreation({
@@ -13,23 +12,22 @@ function NewCoffeeForm(props) {
       quantity: event.target.quantity.value,
       origin: event.target.origin.value,
       roast: event.target.roast.value,
-      id: v4()
+      id: v4(),
     });
   }
 
   return (
     <React.Fragment>
-      <React.Fragment>
-        <ReusableForm
-          formSubmissionHandler={handleNewCoffeeFormSubmission}
-          buttonText="Add" />
-      </React.Fragment>
+      <ReusableForm
+        formSubmissionHandler={handleNewCoffeeFormSubmission}
+        buttonText="Add"
+      />
     </React.Fragment>
   );
 }
 
 NewCoffeeForm.propTypes = {
-  onNewCoffeeCreation: PropTypes.func
+  onNewCoffeeCreation: PropTypes.func,
 };
 
 export default NewCoffeeForm;
