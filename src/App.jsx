@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header, Navbar, CoffeeControl, Footer } from './Components';
 
 function App() {
   return (
     <>
       <Header />
       <Navbar />
-      <InventoryControl />
+      <CoffeeControl />
       <Footer />
     </>
   );
