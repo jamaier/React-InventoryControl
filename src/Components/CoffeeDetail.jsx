@@ -9,6 +9,7 @@ function CoffeeDetails(props) {
       <h1>Coffee Detail</h1>
       <h4>Name: {coffee.name}</h4>
       <p>Price: {coffee.price}</p>
+      <p>Quantity: {coffee.quantity}</p>
 
       <button onClick={props.onClickingEdit}>Update Coffee</button>
       <hr />
@@ -18,6 +19,7 @@ function CoffeeDetails(props) {
 
 CoffeeDetails.propTypes = {
   coffee: PropTypes.object,
+  onClickingEdit: PropTypes.func
 };
 
 export default CoffeeDetails;
