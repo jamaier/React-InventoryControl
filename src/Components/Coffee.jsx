@@ -14,7 +14,8 @@ const Coffee = (props) => {
 Coffee.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  quantity: PropTypes.number.isRequired
+  quantity: PropTypes.number.isRequired,
+  id: PropTypes.string,
 }
 
 export default Coffee;
