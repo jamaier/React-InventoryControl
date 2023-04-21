@@ -9,6 +9,7 @@ class CoffeeControl extends React.Component {
     this.state = {
       formVisibleOnPage: false,
       masterCoffeeList: [],
+      selectedCoffee: null,
     };
   }
 
@@ -18,6 +19,13 @@ class CoffeeControl extends React.Component {
       masterCoffeeList: newMasterCoffeeList,
       formVisibleOnPage: false,
     });
+  };
+
+  handleChangingSelectedCoffee = (id) => {
+    const selectedCoffee = this.state.masterCoffeeList.filter(
+      (coffee) => coffee.id === id
+    )[0];
+    this.setState({ selectedCoffee: selectedCoffee });
   };
 
   handleClick = () => {
