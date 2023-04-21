@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Coffee Shop - Inventory Control
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### _By: Jacob Maier_
+
+## Technologies Used
+
+* _React_
+* _JavaScript_
+* _CSS_
+* _HTML_
+* _node_
+
+
+## Description
+This application let's the user control inventory of a coffee via local and shared state. The user can Create, view the items details, update and delete individual items from the list. 
+
+## Setup/Installation Requirements
+
+* Clone this repo to your machine
+* Navigate to the top level of the folder in your terminal
+* Run `$ npm install` to install necessary packages via Node.js. 
+* install Node => [here](https://nodejs.org/en/download)
 
 ## Available Scripts
 
@@ -45,26 +64,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Known Bugs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+_No Known Bugs_
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+_MIT_
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Copyright_ _Jacob Maier_ _2023_
