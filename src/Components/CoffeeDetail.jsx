@@ -8,6 +8,8 @@ function CoffeeDetails(props) {
     <React.Fragment>
       <h1>Coffee Detail</h1>
       <h4>Name: {coffee.name}</h4>
+      <p>Origin: {coffee.origin}</p>
+      <p>Roast: {coffee.roast}</p>
       <p>Price: {coffee.price}</p>
       <p>Quantity: {coffee.quantity}</p>
 

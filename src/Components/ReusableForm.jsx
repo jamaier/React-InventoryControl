@@ -10,6 +10,15 @@ const ReusableForm = (props) => {
           name='name'
           placeholder='Coffee name' />
         <input
+          type="text"
+          name="origin"
+          placeholder="Origin" />
+        <select name="roast">
+          <option value="Light">Light</option>
+          <option value="Medium">Medium</option>
+          <option value="Dark">Dark</option>
+        </select>
+        <input
           type='number'
           name='price'
           placeholder='Price' />
