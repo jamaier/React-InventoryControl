@@ -72,24 +72,24 @@ class CoffeeControl extends React.Component {
     }
   };
 
-  handleDecreaseQuantity = (coffee) => {
-    if (coffee.quantity > 0) {
-      const newQuantity = coffee.quantity - 1;
-      const updatedCoffee = { ...coffee, quantity: newQuantity };
-      const previousCoffeeList = this.state.masterCoffeeList.filter(
-        (c) => c.id !== coffee.id
-      );
-      this.setState({
-        masterCoffeeList: [...previousCoffeeList, updatedCoffee],
-      });
-    }
-  };
+handleDecreaseQuantity = (coffee) => {
+  if (coffee.quantity > 0) {
+    const newQuantity = coffee.quantity - 1;
+    const updatedCoffee = { ...coffee, quantity: newQuantity };
+    const previousCoffeeList = this.state.masterCoffeeList.filter(
+      (c) => c.id !== coffee.id
+    );
+    this.setState({
+      masterCoffeeList: [...previousCoffeeList, updatedCoffee],
+    });
+  }
+};
 
   render() {
     let currentlyVisibleState = null;
     let buttonText = null;
 
-    if (this.state.selectedCoffee != null) {
+    if (this.state.selectedCoffee != null && this.state.editing === false && this.state.formVisibleOnPage === false) {
       currentlyVisibleState = (
         <CoffeeDetail
           coffee={this.state.selectedCoffee}
@@ -99,12 +99,12 @@ class CoffeeControl extends React.Component {
         />
       );
       buttonText = "Return to Coffee List";
-    } else if (this.state.formVisibleOnPage) {
+    } else if (this.state.formVisibleOnPage === true) {
       currentlyVisibleState = (
         <NewCoffeeForm onNewCoffeeCreation={this.handleAddingNewCoffeeToList} />
       );
       buttonText = "Return to Coffee List";
-    } else if (this.state.editing) {
+    } else if (this.state.editing === true && this.state.selectedCoffee != null) {
       currentlyVisibleState = (
         <EditCoffeeForm
           coffee={this.state.selectedCoffee}
