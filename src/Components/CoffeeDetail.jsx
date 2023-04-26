@@ -15,6 +15,7 @@ function CoffeeDetails(props) {
 
       <button onClick={props.onClickingEdit}>Update Coffee</button>
       <button onClick={() => props.onDeleteCoffee(coffee.id)}>Delete Coffee</button>
+      <button onClick={() => props.onDecrementCoffee(coffee)}>Sell</button>
       <hr />
     </React.Fragment>
   );
@@ -23,7 +24,8 @@ function CoffeeDetails(props) {
 CoffeeDetails.propTypes = {
   coffee: PropTypes.object,
   onClickingEdit: PropTypes.func,
-  onDeleteCoffee: PropTypes.func
+  onDeleteCoffee: PropTypes.func,
+  onDecrementCoffee: PropTypes.func,
 };
 
 export default CoffeeDetails;
