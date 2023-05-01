@@ -11,6 +11,10 @@
 * _node_
 
 
+## Component Tree
+
+<img src="./public/images/components-tree.png">
+
 ## Description
 This application let's the user control inventory of a coffee via local and shared state. The user can Create, view the items details, update and delete individual items from the list. 
 
